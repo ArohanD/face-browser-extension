@@ -3,18 +3,13 @@
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDescription__",
   "version": "0.0.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "default_locale": "en",
   "icons": {
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
   },
-  "background": {
-    "scripts": [
-      "scripts/background.js"
-    ]
-  },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
@@ -24,8 +19,7 @@
   },
   "options_page": "pages/options.html",
   "options_ui": {
-    "page": "pages/options.html",
-    "chrome_style": true
+    "page": "pages/options.html"
   },
   "minimum_chrome_version": "10.0",
   "devtools_page": "pages/devtools.html",
@@ -48,7 +42,7 @@
       "all_frames": false
     }
   ],
-  "permissions": [
+  "host_permissions": [
     "bookmarks",
     "clipboardRead",
     "clipboardWrite",
