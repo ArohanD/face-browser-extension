@@ -10,8 +10,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 
-  position: absolute;
+  position: fixed;
   bottom: 2%;
   right: 2%;
-  z-index: -3;
 }

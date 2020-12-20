@@ -11,8 +11,6 @@ document.body.appendChild(appPointer)
 
 const videoElement = document.createElement('video')
 videoElement.id = 'appVideoStream'
-videoElement.setAttribute("width", "600")
-videoElement.setAttribute("height", "480")
 document.body.appendChild(videoElement)
 
 const loadWebcam = async() => {
