@@ -5,3 +5,13 @@
 
   font-size: 2em;
 }
+
+#appVideoStream {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  z-index: -3;
+}
