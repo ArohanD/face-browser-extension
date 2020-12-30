@@ -9,6 +9,7 @@ import {
   calibrationText,
 } from "./dom/customDomElements";
 import { loadWebcam } from "./dom/loadWebcam";
+import positionWork from "./dom/positions";
 //import "@tensorflow/tfjs-backend-cpu";
 //import * as tf from "@tensorflow/tfjs";
 
@@ -22,7 +23,7 @@ interface Position {
 let sensitivity = 30;
 let pointerLeft = 50;
 let pointerTop = 50;
-let pointerSpeed = 1.5;
+let pointerSpeed = 1;
 
 let calibrationSet = [] as any[];
 let position: Position = {
@@ -43,6 +44,10 @@ const runFaceDetector = async () => {
   setInterval(() => {
     detectFace(net);
   }, 10);
+  
+  setInterval(() => {
+    positionWork(appPointer, document.body)
+  }, 1000)
 };
 
 const detectFace = async (net: any) => {
