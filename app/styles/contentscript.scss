@@ -2,8 +2,11 @@
   position: fixed;
   transform: translate(-50%, -50%);
   z-index: 200;
+  padding: 0;
+  margin: 0;
 
   font-size: 2em;
+  border: 1px solid green;
 }
 
 #appVideoStream {
@@ -24,4 +27,8 @@
 
 .interactive_element {
   border: 1px solid red !important;
+}
+
+.interactive_blue {
+  border: 4px solid blue !important;
 }
